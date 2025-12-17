@@ -1,0 +1,23 @@
+.root
+{
+    -fx-font-size: 24pt;
+    -fx-background-color: #536dfe;
+}
+
+.label
+{
+    -fx-text-fill: #e8eaf6;
+    -fx-font-weight:bold;
+}
+
+.button
+{
+    -fx-background-radius: 40px;
+}
+
+/* Optionnel : effet hover pour les boutons */
+.button:hover
+{
+    -fx-opacity: 0.8;
+    -fx-cursor: hand;
+}

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" spacing="25.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hhb.project.cardgame.MenuController">
+    <padding>
+        <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+    </padding>
+
+    <Label text="Memory Game">
+        <font>
+            <Font name="System Bold" size="36.0" />
+        </font>
+    </Label>
+
+    <Label fx:id="welcomeLabel" text="Bienvenue !">
+        <font>
+            <Font size="16.0" />
+        </font>
+    </Label>
+
+    <Label text="Choisissez votre niveau de difficulté">
+        <font>
+            <Font size="18.0" />
+        </font>
+        <VBox.margin>
+            <Insets top="10.0" />
+        </VBox.margin>
+    </Label>
+
+    <Button fx:id="easyButton" onAction="#playEasy" prefHeight="50.0" prefWidth="250.0" text="FACILE (6 paires)" style="-fx-font-size: 18px; -fx-background-color: #4CAF50; -fx-text-fill: white;">
+    </Button>
+
+    <Button fx:id="mediumButton" onAction="#playMedium" prefHeight="50.0" prefWidth="250.0" text="MOYEN (8 paires)" style="-fx-font-size: 18px; -fx-background-color: #FF9800; -fx-text-fill: white;">
+    </Button>
+
+    <Button fx:id="hardButton" onAction="#playHard" prefHeight="50.0" prefWidth="250.0" text="DIFFICILE (10 paires)" style="-fx-font-size: 18px; -fx-background-color: #F44336; -fx-text-fill: white;">
+    </Button>
+
+    <Button fx:id="leaderboardButton" onAction="#showLeaderboard" prefHeight="45.0" prefWidth="250.0" text="🏆 LEADERBOARD" style="-fx-font-size: 16px; -fx-background-color: #9C27B0; -fx-text-fill: white;">
+        <VBox.margin>
+            <Insets top="15.0" />
+        </VBox.margin>
+    </Button>
+
+    <Button fx:id="logoutButton" onAction="#handleLogout" prefHeight="40.0" prefWidth="250.0" text="Se déconnecter" style="-fx-font-size: 14px; -fx-background-color: #757575; -fx-text-fill: white;">
+    </Button>
+</VBox>
